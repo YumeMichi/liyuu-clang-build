@@ -14,7 +14,7 @@ function msg() {
 msg "Building LLVM..."
 ./build-llvm.py \
 	--clang-vendor "Proton" \
-	--targets "ARM;AArch64;X86" \
+	--targets "ARM;AArch64" \
 	"$repo_flag" \
 	--pgo kernel-defconfig \
 	--lto full
