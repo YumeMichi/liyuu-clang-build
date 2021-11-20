@@ -43,9 +43,7 @@ def download_binutils(folder):
         # Download the tarball
         binutils_tarball = folder.joinpath(binutils + ".tar.xz")
         subprocess.run([
-            "curl", "-LSs", "-o",
-            binutils_tarball.as_posix(),
-            "https://ftp.gnu.org/gnu/binutils/" + binutils_tarball.name
+            "wget", "-cq", "https://gnu.mirror.constant.com/binutils/" + binutils_tarball.name
         ],
                        check=True)
         verify_binutils_checksum(binutils_tarball)
