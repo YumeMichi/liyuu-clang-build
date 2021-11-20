@@ -13,7 +13,7 @@ function msg() {
 # Build LLVM
 msg "Building LLVM..."
 ./build-llvm.py \
-	--clang-vendor "Proton" \
+	--clang-vendor "Liyuu" \
 	--targets "ARM;AArch64" \
 	"$repo_flag" \
 	--pgo kernel-defconfig \
